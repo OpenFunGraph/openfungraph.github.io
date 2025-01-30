@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="3D Semantic Instance Segmentation with Open-Vocabulary queries">
-  <meta name="keywords" content="OpenMask3D, Instance Segmentation, 3D Scene Understanding">
+        content="Open-Vocabulary Functional 3D Scene Graphs for Real-World Indoor Spaces">
+  <meta name="keywords" content="OpenFunGraph, Functional Scene Graph, 3D Scene Understanding">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OpenMask3D 🛋</title>
+  <title>OpenFunGraph 🛋</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -49,14 +49,14 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">OpenMask3D 🛋<br />
-            <p class="title is-3 publication-title">Open-Vocabulary 3D Instance Segmentation </p>
+          <h1 class="title is-1 publication-title">OpenFunGraph<br />
+            <p class="title is-3 publication-title">Open-Vocabulary Functional 3D Scene Graphs for Real-World Indoor Spaces </p>
           </h1>          
 
-          <h1 class="title is-4" style="color: #5c5c5c;">NeurIPS 2023</h1>
+          <h1 class="title is-4" style="color: #5c5c5c;">CVPR 2025</h1>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">
+            <!-- <span class="author-block">
               <a href="https://aycatakmaz.github.io/">Ay&#231;a Takmaz</a><sup>1*</sup>,</span>
             <span class="author-block">
               <a href="https://elisabettafedele.github.io/">Elisabetta Fedele</a><sup>1*</sup>,
@@ -73,22 +73,24 @@
             </span>
             <span class="author-block">
               <a href="https://francisengelmann.github.io/">Francis Engelmann</a><sup>1,3</sup>
-            </span>
+            </span> -->
+            <span class="author-block">
+              Anonymous authors
+            </span> -->
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block" style="margin-right: 1em;"><sup>1</sup>ETH Zürich</span>
+            <!-- <span class="author-block" style="margin-right: 1em;"><sup>1</sup>ETH Zürich</span>
             <span class="author-block" style="margin-right: 1em;"><sup>2</sup>Microsoft</span>
-            <span class="author-block" style="margin-right: 1em;"><sup>3</sup>Google</span></br>
-            <span class="author-block" style="margin-right: 1em; font-size: 18px;"><sup>*</sup>Equal contribution</span>
+            <span class="author-block" style="margin-right: 1em;"><sup>3</sup>Google</span></br> -->
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="static/pdf/openmask3d.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
+                <!-- <a href="static/pdf/openmask3d.pdf"
+                   class="external-link button is-normal is-rounded is-dark"> -->
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
@@ -96,8 +98,8 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2306.13631"
-                   class="external-link button is-normal is-rounded is-dark">
+                <!-- <a href="https://arxiv.org/abs/2306.13631"
+                   class="external-link button is-normal is-rounded is-dark"> -->
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
@@ -106,8 +108,8 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/OpenMask3D/openmask3d"
-                   class="external-link button is-normal is-rounded is-dark">
+                <!-- <a href="https://github.com/OpenMask3D/openmask3d"
+                   class="external-link button is-normal is-rounded is-dark"> -->
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
@@ -128,10 +130,10 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/teaser.jpg" class="center"/>
+      <!-- <img src="static/images/teaser.jpg" class="center"/> -->
       <br><br>
       <h2 class="subtitle has-text-centered">
-      <strong>OpenMask3D</strong> is a zero-shot approach to perform 3D instance segmentation with open-vocabulary queries.
+      <!-- <strong>OpenMask3D</strong> is a zero-shot approach to perform 3D instance segmentation with open-vocabulary queries. -->
     </h2>
     </div>
   </div>
@@ -146,17 +148,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce the task of open-vocabulary 3D instance segmentation.
-            Current approaches for 3D instance segmentation can typically only recognize object categories from a pre-defined closed set of classes that are annotated in the training datasets.
-            This results in important limitations for real-world applications where one might need to perform tasks guided by novel,
-            open-vocabulary queries related to a wide variety of objects.
-            Recently, open-vocabulary 3D scene understanding methods have emerged to address this problem by learning queryable features for each point in the scene.
-            While such a representation can be directly employed to perform semantic segmentation, existing methods cannot separate multiple object instances.
-            In this work, we address this limitation, and propose OpenMask3D, which is a zero-shot approach for open-vocabulary 3D instance segmentation.
-            Guided by predicted class-agnostic 3D instance masks, our model aggregates per-mask features via multi-view fusion of CLIP-based image embeddings.
-            Experiments and ablation studies on ScanNet200 and Replica show that OpenMask3D outperforms other open-vocabulary methods,
-            especially on the long-tail distribution. Qualitative experiments further showcase OpenMask3D's ability to segment
-            object properties based on free-form queries describing geometry, affordances, and materials.          
+            We introduce the task of predicting functional 3D scene graphs for real-world indoor environments from posed RGB-D images. 
+            Unlike traditional 3D scene graphs that focus on spatial relationships of objects, functional 3D scene graphs capture objects, interactive elements, and their functional relationships. 
+            Due to the lack of training data, we leverage foundation models, including visual language models (VLMs) and large language models (LLMs), to encode functional knowledge. 
+            We evaluate our approach on an extended SceneFun3D dataset and a newly collected dataset, FunGraph3D, both annotated with functional 3D scene graphs. 
+            Our method significantly outperforms adapted baselines, including Open3DSG and ConceptGraph, demonstrating its effectiveness in modeling complex scene functionalities. 
+            We also demonstrate downstream applications such as 3D question answering and robotic manipulation using functional 3D scene graphs.
           </p>
         </div>
       </div>
@@ -167,8 +164,8 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Explanatory Video</h2>
-        <video controls poster="static/images/explanatory_video_poster.jpeg">
-          <source src="static/videos/poster_session.mp4" type="video/mp4">
+        <!-- <video controls poster="static/images/explanatory_video_poster.jpeg"> -->
+          <!-- <source src="static/videos/poster_session.mp4" type="video/mp4"> -->
           Your browser does not support the video tag.
         </video>
       </div>
@@ -186,19 +183,18 @@
       <br>
         <div class="content has-text-justified">
           <p>
-            Using <i>OpenMask3D</i> you can perform free form queries which capture uncommon objects, affordances, object properties, geometry, materials, and states.
+            Using <i>OpenFunGraph</i> you can excavate scene interactive elements and their functional relationships between objects.
           </p>
         </div>
-        <h2 class="title is-4">Uncommon objects</h2>
       </div>
     </div>
 
 
 
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered"> -->
 
       <!-- Affordances 1 -->
-      <div class="column">
+      <!-- <div class="column">
         <div class="content">
           
           <img src="static/images/footrest.jpeg"
@@ -209,11 +205,11 @@
             </p>
           </center>
         </div>
-      </div>
+      </div> -->
       <!--/ Affordances 1 -->
 
       <!-- Affordances 2 -->
-      <div class="column">
+      <!-- <div class="column">
         <div class="content">
           
           <img src="static/images/angel.jpeg"
@@ -224,22 +220,22 @@
             </p>
           </center>
         </div>
-      </div>
+      </div> -->
     <!--/ Affordances 2 -->
-  </div>
+  <!-- </div> -->
 
-  <div class="container is-max-desktop">
+  <!-- <div class="container is-max-desktop">
 
     <div class="columns is-centered">
       <div class="column is-full-width">
           <h2 class="title is-4">Affordances</h2>
       </div>
-    </div>
+    </div> -->
 
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered"> -->
 
       <!-- Affordances 1 -->
-      <div class="column">
+      <!-- <div class="column">
         <div class="content">
           
           <img src="static/images/aff1.jpeg"
@@ -250,11 +246,11 @@
             </p>
           </center>
         </div>
-      </div>
+      </div> -->
       <!--/ Affordances 1 -->
 
       <!-- Affordances 2 -->
-      <div class="column">
+      <!-- <div class="column">
         <div class="content">
           
           <img src="static/images/aff2.jpeg"
@@ -265,197 +261,21 @@
             </p>
           </center>
         </div>
-      </div>
+      </div> -->
     <!--/ Affordances 2 -->
-  </div>
+  <!-- </div> -->
 
 
-
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-          <h2 class="title is-4">Object properties</h2>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
-
-      <!-- Affordances 1 -->
-      <div class="column">
-        <div class="content">
-          
-          <img src="static/images/color1.jpeg"
-            class="interpolation-image">
-            <center>
-            <p>
-              <i >“an orange pillow”</i>
-            </p>
-          </center>
-        </div>
-      </div>
-      <!--/ Affordances 1 -->
-
-      <!-- Affordances 2 -->
-      <div class="column">
-        <div class="content">
-          
-          <img src="static/images/color2.jpeg"
-            class="interpolation-image">
-            <center>
-            <p>
-              <i >“a yellow pillow”</i>
-            </p>
-          </center>
-        </div>
-      </div>
-    <!--/ Affordances 2 -->
-  </div>
-
-
-
-
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-          <h2 class="title is-4">Geometry</h2>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
-
-      <!-- Affordances 1 -->
-      <div class="column">
-        <div class="content">
-          
-          <img src="static/images/geo1.jpeg"
-            class="interpolation-image">
-            <center>
-            <p>
-              <i >“a circular table” </i>
-            </p>
-          </center>
-        </div>
-      </div>
-      <!--/ Affordances 1 -->
-
-      <!-- Affordances 2 -->
-      <div class="column">
-        <div class="content">
-          
-          <img src="static/images/geo2.jpeg"
-            class="interpolation-image">
-            <center>
-            <p>
-              <i >“a rectangular table” </i>
-            </p>
-          </center>
-        </div>
-      </div>
-    <!--/ Affordances 2 -->
-  </div>
-
-
-
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-          <h2 class="title is-4">Materials</h2>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
-
-      <!-- Affordances 1 -->
-      <div class="column">
-        <div class="content">
-          
-          <img src="static/images/mat1.jpeg"
-            class="interpolation-image">
-            <center>
-            <p>
-              <i >“a leather chair” </i>
-            </p>
-          </center>
-        </div>
-      </div>
-      <!--/ Affordances 1 -->
-
-      <!-- Affordances 2 -->
-      <div class="column">
-        <div class="content">
-          
-          <img src="static/images/mat2.jpeg"
-            class="interpolation-image">
-            <center>
-            <p>
-              <i >“a fabric chair” </i>
-            </p>
-          </center>
-        </div>
-      </div>
-    <!--/ Affordances 2 -->
-  </div>
-
-
-
-
-
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-          <h2 class="title is-4">States</h2>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
-
-      <!-- Affordances 1 -->
-      <div class="column">
-        <div class="content">
-          
-          <img src="static/images/state1.jpeg"
-            class="interpolation-image">
-            <center>
-            <p>
-              <i >“a full garbage bin” </i>
-            </p>
-          </center>
-        </div>
-      </div>
-      <!--/ Affordances 1 -->
-
-      <!-- Affordances 2 -->
-      <div class="column">
-        <div class="content">
-          
-          <img src="static/images/state2.jpeg"
-            class="interpolation-image">
-            <center>
-            <p>
-              <i >“an empty garbage bin” </i>
-            </p>
-          </center>
-        </div>
-      </div>
-    <!--/ Affordances 2 -->
-  </div>
-
-
-
-<h2 class="title is-3">BibTeX</h2>
+<!-- <h2 class="title is-3">BibTeX</h2>
 <pre><code>
 @inproceedings{takmaz2023openmask3d,
   title={{OpenMask3D: Open-Vocabulary 3D Instance Segmentation}},
   author={Takmaz, Ay{\c{c}}a and Fedele, Elisabetta and Sumner, Robert W. and Pollefeys, Marc and Tombari, Federico and Engelmann, Francis},
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
 year={2023}
-}</code></pre>
+}</code></pre> -->
 
-</section>
+<!-- </section>
 
 <footer class="footer">
   <div class="container">
@@ -475,7 +295,7 @@ year={2023}
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 </body>
 </html>
