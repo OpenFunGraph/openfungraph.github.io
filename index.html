@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="description"
         content="Open-Vocabulary Functional 3D Scene Graphs for Real-World Indoor Spaces">
-  <meta name="keywords" content="OpenFunGraph, Functional Scene Graph, 3D Scene Understanding">
+  <meta name="keywords" content="Functional Scene Graph, 3D Scene Understanding">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OpenFunGraph 🛋</title>
 
@@ -49,40 +49,40 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">OpenFunGraph<br />
-            <p class="title is-3 publication-title">Open-Vocabulary Functional 3D Scene Graphs for Real-World Indoor Spaces </p>
+          <h1 class="title is-2 publication-title">Open-Vocabulary Functional 3D Scene Graphs for Real-World Indoor Spaces<br />
+            <!-- <p class="title is-3 publication-title">Open-Vocabulary Functional 3D Scene Graphs for Real-World Indoor Spaces </p> -->
           </h1>          
 
           <h1 class="title is-4" style="color: #5c5c5c;">CVPR 2025</h1>
 
           <div class="is-size-5 publication-authors">
-            <!-- <span class="author-block">
-              <a href="https://aycatakmaz.github.io/">Ay&#231;a Takmaz</a><sup>1*</sup>,</span>
             <span class="author-block">
-              <a href="https://elisabettafedele.github.io/">Elisabetta Fedele</a><sup>1*</sup>,
-            </span>
-            <br />
+              <a href="https://zhangcyg.github.io/">Chenyangguang Zhang</a><sup>1,2</sup>,</span>
             <span class="author-block">
-              <a href="https://studios.disneyresearch.com/people/bob-sumner/">Robert W. Sumner</a><sup>1</sup>,
+              <a href="https://alexdelitzas.github.io/">Alexandros Delitzas</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a><sup>1,2</sup>,
+              <a href="https://fangjinhuawang.github.io/">Fangjinhua Wang</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://federicotombari.github.io/">Federico Tombari</a><sup>3</sup>,
+              <a href="https://lolrudy.github.io/">Ruida Zhang</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://francisengelmann.github.io/">Francis Engelmann</a><sup>1,3</sup>
-            </span> -->
+              <a href="https://www.au.tsinghua.edu.cn/info/1111/1524.htm">Xiangyang Ji</a><sup>1</sup>,
+            </span>
             <span class="author-block">
-              Anonymous authors
-            </span> -->
+              <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://francisengelmann.github.io/">Francis Engelmann</a><sup>2,3</sup>
+            </span>
+            <span class="author-block">
           </div>
 
           <div class="is-size-5 publication-authors">
-            <!-- <span class="author-block" style="margin-right: 1em;"><sup>1</sup>ETH Zürich</span>
-            <span class="author-block" style="margin-right: 1em;"><sup>2</sup>Microsoft</span>
-            <span class="author-block" style="margin-right: 1em;"><sup>3</sup>Google</span></br> -->
+            <span class="author-block" style="margin-right: 1em;"><sup>1</sup>Tsinghua University</span>
+            <span class="author-block" style="margin-right: 1em;"><sup>2</sup>ETH Zürich</span>
+            <span class="author-block" style="margin-right: 1em;"><sup>3</sup>Stanford University</span></br>
           </div>
 
           <div class="column has-text-centered">
@@ -116,6 +116,15 @@
                   <span>Code</span>
                   </a>
               </span>
+              <span class="link-block">
+                <!-- <a href="https://github.com/OpenMask3D/openmask3d"
+                   class="external-link button is-normal is-rounded is-dark"> -->
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+              </span>
     
             </div>
 
@@ -130,10 +139,13 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- <img src="static/images/teaser.jpg" class="center"/> -->
+      <img src="static/images/teaser_top.jpg" class="center"/>
+      <img src="static/images/teaser.png" class="center"/>
       <br><br>
-      <h2 class="subtitle has-text-centered">
-      <!-- <strong>OpenMask3D</strong> is a zero-shot approach to perform 3D instance segmentation with open-vocabulary queries. -->
+      <h2 class="subtitle has-text-left">
+      <strong>Functional 3D Scene Graphs.</strong> 
+      Given an input sequence of posed RGB-D frames of an indoor environment, our method predicts a functional 3D scene graph by detecting objects, identifying interactive elements, and inferring functional relationships. 
+      This enables the representation of interactions, functions, and scene dynamics, going beyond existing 3D scene graph methods that are constrained to spatial relationships between static objects.
     </h2>
     </div>
   </div>
@@ -160,16 +172,6 @@
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Explanatory Video</h2>
-        <!-- <video controls poster="static/images/explanatory_video_poster.jpeg"> -->
-          <!-- <source src="static/videos/poster_session.mp4" type="video/mp4"> -->
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
 </section>
 
 <section class="section">
@@ -179,105 +181,67 @@
       <div class="column is-full-width">
        
         <h2 class="title is-3">Qualitative results</h2>
-    
+        <img src="static/images/quali.jpg" class="center"/>
       <br>
         <div class="content has-text-justified">
           <p>
-            Using <i>OpenFunGraph</i> you can excavate scene interactive elements and their functional relationships between objects.
+            Scene interactive elements and their functional relationships between objects are exploited by our approach.
           </p>
         </div>
+        <video controls poster="static/images/quali_res_poster.PNG">
+          <source src="static/videos/quali_res.mp4" type="video/mp4">
+          </video>
+          <br>
+          <video controls poster="static/images/quali_res_poster2.PNG">
+            <source src="static/videos/quali_res2.mp4" type="video/mp4">
+            </video>
+          <br><br>
+          <h2 class="title is-3">FunGraph3D Dataset</h2>
+          <img src="static/images/masks.jpg" class="center"/>
+          <img src="static/images/graph.jpg" class="center"/>
+          <img src="static/images/hands.jpg" class="center"/>
+          <img src="static/images/scenes.jpg" class="center"/>
+        <br>
+          <div class="content has-text-justified">
+            <p>
+              FunGraph3D dataset is constructed with multi-sensor data (i.e., high-fidelity 3D reconstructions, consumer-device video captures, egocentric human-scene interaction videos) and functional 3D scene graph annotations. 
+            </p>
+          </div>
+        <h2 class="title is-4">High-resolution 3D scan</h2>
+        <video controls poster="static/images/video3d1.png">
+          <source src="static/videos/scan_3d.mp4" type="video/mp4">
+          </video>
+          <br><br>
+          <h2 class="title is-4">Static RGB-D sequence</h2>
+          <video controls poster="static/images/videorgb1.png">
+            <source src="static/videos/rgb.mp4" type="video/mp4">
+            </video>
+            <br><br>
+        <h2 class="title is-4">Egocentric human-scene interaction video</h2>
+        <video controls poster="static/images/videoego1.png">
+          <source src="static/videos/ego.MP4" type="video/mp4">
+          </video>
+          <br><br>
+        <h2 class="title is-4">Functional 3D scene graph annotations</h2>
+        <video controls poster="static/images/videoanno1.png">
+          <source src="static/videos/anno.mp4" type="video/mp4">
+          </video>
       </div>
     </div>
+  </div>
 
 
-
-    <!-- <div class="columns is-centered"> -->
-
-      <!-- Affordances 1 -->
-      <!-- <div class="column">
-        <div class="content">
-          
-          <img src="static/images/footrest.jpeg"
-            class="interpolation-image">
-            <center>
-            <p>
-              <i >footrest</i>
-            </p>
-          </center>
-        </div>
-      </div> -->
-      <!--/ Affordances 1 -->
-
-      <!-- Affordances 2 -->
-      <!-- <div class="column">
-        <div class="content">
-          
-          <img src="static/images/angel.jpeg"
-            class="interpolation-image">
-            <center>
-            <p>
-              <i >angel</i>
-            </p>
-          </center>
-        </div>
-      </div> -->
-    <!--/ Affordances 2 -->
-  <!-- </div> -->
-
-  <!-- <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-          <h2 class="title is-4">Affordances</h2>
-      </div>
-    </div> -->
-
-    <!-- <div class="columns is-centered"> -->
-
-      <!-- Affordances 1 -->
-      <!-- <div class="column">
-        <div class="content">
-          
-          <img src="static/images/aff1.jpeg"
-            class="interpolation-image">
-            <center>
-            <p>
-              <i >“sit”</i>
-            </p>
-          </center>
-        </div>
-      </div> -->
-      <!--/ Affordances 1 -->
-
-      <!-- Affordances 2 -->
-      <!-- <div class="column">
-        <div class="content">
-          
-          <img src="static/images/aff2.jpeg"
-            class="interpolation-image">
-            <center>
-            <p>
-              <i >“wash”</i>
-            </p>
-          </center>
-        </div>
-      </div> -->
-    <!--/ Affordances 2 -->
-  <!-- </div> -->
-
-
-<!-- <h2 class="title is-3">BibTeX</h2>
+<h2 class="title is-3">BibTeX</h2>
 <pre><code>
-@inproceedings{takmaz2023openmask3d,
+<!-- @inproceedings{takmaz2023openmask3d,
   title={{OpenMask3D: Open-Vocabulary 3D Instance Segmentation}},
   author={Takmaz, Ay{\c{c}}a and Fedele, Elisabetta and Sumner, Robert W. and Pollefeys, Marc and Tombari, Federico and Engelmann, Francis},
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-year={2023}
-}</code></pre> -->
+year={2023} } -->
+</code></pre>
+</section>
 
-<!-- </section>
-
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
