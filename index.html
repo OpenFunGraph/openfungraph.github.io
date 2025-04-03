@@ -7,30 +7,12 @@
   <meta name="keywords" content="Functional Scene Graph, 3D Scene Understanding">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OpenFunGraph 🛋</title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
-
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -89,40 +71,32 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <!-- <a href="static/pdf/openmask3d.pdf"
-                   class="external-link button is-normal is-rounded is-dark"> -->
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
               <span class="link-block">
                 <a href="https://arxiv.org/pdf/2503.19199"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Paper</span>
                 </a>
               </span>
-              <!-- Code Link. -->
+
               <span class="link-block">
-                <!-- <a href="https://github.com/OpenMask3D/openmask3d"
-                   class="external-link button is-normal is-rounded is-dark"> -->
+                <a class="external-link button is-normal is-rounded is-dark is-disabled"
+                   aria-disabled="true"
+                   tabindex="-1">
                   <span class="icon">
-                      <i class="fab fa-github"></i>
+                    <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
-                  </a>
+                </a>
               </span>
+
               <span class="link-block">
-                <!-- <a href="https://github.com/OpenMask3D/openmask3d"
-                   class="external-link button is-normal is-rounded is-dark"> -->
+                <a href="https://huggingface.co/OpenFunGraph"
+                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fab fa-github"></i>
+                    <i class="fa-solid"></i>🤗
                   </span>
                   <span>Dataset</span>
                   </a>
@@ -140,9 +114,9 @@
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/teaser_top.jpg" class="center"/>
-      <img src="static/images/teaser.png" class="center"/>
+    <div class="hero-body" align="center">
+      <img src="static/images/teaser_top.jpg" class="center" width="50%" />
+      <img src="static/images/teaser.png" class="center" width="50%" />
       <br><br>
       <h2 class="subtitle has-text-left">
       <strong>Functional 3D Scene Graphs.</strong> 
@@ -172,8 +146,6 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
 </section>
 
 <section class="section">
@@ -230,39 +202,15 @@
           </video>
       </div>
     </div>
+    <h2 class="title is-3">BibTeX</h2>
+    <pre><code>@inproceedings{zhang2025open,
+  title = {{Open-Vocabulary Functional 3D Scene Graphs for Real-World Indoor Spaces}},
+  author = {Zhang, Chenyangguang and Delitzas, Alexandros and Wang, Fangjinhua and Zhang, Ruida and Ji, Xiangyang and Pollefeys, Marc and Engelmann, Francis},
+  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2025}
+}</code></pre>
+    </section>
   </div>
-
-
-<h2 class="title is-3">BibTeX</h2>
-<pre><code>
-@inproceedings{zhang2025open,
-  title={Open-Vocabulary Functional 3D Scene Graphs for Real-World Indoor Spaces},
-  author={Zhang, Chenyangguang and Delitzas, Alexandros and Wang, Fangjinhua and Zhang, Ruida and Ji, Xiangyang and Pollefeys, Marc and Engelmann, Francis},
-  booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2025} }
-</code></pre>
-</section>
-
-<!-- <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-              Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            It borrows the source code of <a href="https://github.com/nerfies/nerfies.github.io">this website</a>.
-            We would like to thank Utkarsh Sinha and Keunhong Park.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer> -->
-
 </body>
 </html>
 
